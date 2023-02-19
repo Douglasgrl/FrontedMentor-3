@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blue: hsl(215, 32%, 27%);
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+figure img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 1;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+
+.main_img{
+    background-image: url('images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    border-radius: 13px;
+    background-color: var(--cyan);
+}
+
+main .img__cont:hover{
+    cursor: pointer;
+    opacity: .4;
+    border-radius: 10px;
+}
+
+.contenido{
+   margin-top: 25px;
+}
+
+.contenido-titulo{
+    color: var(--white);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.contenido-parrafo{
+    color: var(--soft-blue);
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.price_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0
+}
+
+.price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.price-two{
+    display: flex;
+    gap: 10px;
+    color: var(--soft-blue);
+}
+
+hr{
+    border-color: var(--very-dark-blue);
+    width: 100%;
+}
+
+.people{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.imagen_people{
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.color{
+    color: var(--soft-blue);
+}
+
+.color-hover:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.attribution{
+    font-size: 12px; 
+    text-align: center; 
+    color: var(--white);
+    font-weight: 300;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:700px){
+    .main{
+        width: 350px;
+    }
+}
